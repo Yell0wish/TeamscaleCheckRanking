@@ -1,0 +1,233 @@
+typename,typeid,severity
+"""@Autowired"" should be used when multiple constructors are provided (java:S6829)",java:S6829,Default:Yellow
+"""@Autowired"" should only be used on a single constructor (java:S6818)",java:S6818,Default:Yellow
+"""@Bean"" methods for Singleton should not be invoked in ""@Configuration"" when proxyBeanMethods is false (java:S6838)",java:S6838,Default:Yellow
+"""@Deprecated"" code marked for removal should never be used (java:S5738)",java:S5738,Default:Yellow
+"""@PathVariable"" annotation should be present if a path variable is used (java:S6856)",java:S6856,Default:Yellow
+"""@Qualifier"" should not be used on ""@Bean"" methods (java:S6831)",java:S6831,Default:Yellow
+"""@Value"" annotation should inject property or SpEL expression (java:S6804)",java:S6804,Default:Yellow
+"""Arrays.stream"" should be used for primitive arrays (java:S3631)",java:S3631,Default:Yellow
+"""Externalizable"" classes should have no-arguments constructors (java:S2060)",java:S2060,Default:Yellow
+"""StringBuilder"" and ""StringBuffer"" should not be instantiated with a character (java:S1317)",java:S1317,Default:Red
+"""compareTo"" results should not be checked for specific values (java:S2200)",java:S2200,Default:Yellow
+"""entrySet()"" should be iterated when both the key and value are needed (java:S2864)",java:S2864,Default:Yellow
+"""equals"" method overrides should accept ""Object"" parameters (java:S1201)",java:S1201,Default:Red
+"""equals(Object obj)"" and ""hashCode()"" should be overridden in pairs (java:S1206)",java:S1206,Default:Yellow
+"""equals(Object obj)"" should test the argument's type (java:S2097)",java:S2097,Default:Yellow
+"""iterator"" should not return ""this"" (java:S4348)",java:S4348,Default:Yellow
+"""null"" should not be used with ""Optional"" (java:S2789)",java:S2789,Default:Yellow
+"""read(byte[],int,int)"" should be overridden (java:S4929)",java:S4929,Default:Yellow
+"""toString()"" and ""clone()"" methods should not return null (java:S2225)",java:S2225,Default:Red
+"""toString()"" should never be called on a String object (java:S1858)",java:S1858,Default:Yellow
+"""volatile"" variables should not be used with compound operators (java:S3078)",java:S3078,Default:Yellow
+"""write(byte[],int,int)"" should be overridden (java:S4349)",java:S4349,Default:Yellow
+'serialVersionUID' field should not be set to '0L' in records (java:S6219),java:S6219,Default:Yellow
+A new session should be created during user authentication (java:S5876),java:S5876,Default:Red
+A secure password should be used when connecting to a database (java:S2115),java:S2115,Default:Red
+Adding a list to itself,cqse-avoid-list-adding-itself,Default:Yellow
+Alternatives in regular expressions should be grouped when used with anchors (java:S5850),java:S5850,Default:Yellow
+Annotation in JUnit test class missing,cqse-missing-test-annotation,Default:Yellow
+Architecture violation,Architecture violation,Default:Red
+Arrays and lists should not be copied using loops (java:S3012),java:S3012,Default:Yellow
+AssertJ methods setting the assertion context should come before an assertion (java:S5833),java:S5833,Default:Yellow
+Assertions comparing incompatible types should not be made (java:S5845),java:S5845,Default:Red
+Assertions should not compare an object to itself (java:S5863),java:S5863,Default:Yellow
+Assignment of a variable to itself,cqse-avoid-variable-assignment-to-itself,Default:Yellow
+Async methods should return void or Future (java:S6810),java:S6810,Default:Yellow
+Authorizations should be based on strong decisions (java:S5808),java:S5808,Default:Yellow
+Avoid C-style array declarations in Java,cqse-java-avoid-c-style-array-declaration,Default:Yellow
+Avoid Jumbled Loop Variable Modifications,cqse-avoid-jumbled-for-loop-modifications,Default:Yellow
+Avoid calling Thread.sleep inside test methods,cqse-avoid-calling-thread-sleep-in-tests,Default:Yellow
+Avoid conditional expressions of the form if (true...,cqse-clike-avoid-if-true,Default:Yellow
+Avoid continue and break with label,cqse-continue-or-break-with-label,Default:Yellow
+Avoid creating SimpleDateFormat objects without specifying the Locale,cqse-avoid-creating-simple-date-format-without-locale,Default:Yellow
+Avoid ignored or disabled JUnit tests,cqse-ignored-junit-test,Default:Yellow
+Avoid ignoring method results of immutable BigDecimal and BigInteger methods,cqse-avoid-ignoring-big-decimals-and-big-integers-methods-results,Default:Red
+Avoid insecure SHA-1 and Message-Digest hash algorithms,cqse-avoid-insecure-hash-algorithms,Default:Red
+Avoid leaving deprecated entities,cqse-deprecated-annotation,Default:Yellow
+Avoid special characters in 'javax.ws.rs.QueryParam' annotation parameters,cqse-javax-ws-rs-query-param-value,Default:Yellow
+Avoid unused private fields (Java),cqse-java-avoid-unused-private-fields,Default:Yellow
+Avoid unused private methods (Java),cqse-avoid-unused-private-methods,Default:Yellow
+Avoid using SuppressWarnings,cqse-suppress-warnings-annotation,Default:Yellow
+Avoid using ternary operators,cqse-dont-use-ternary-operator,Default:Yellow
+Back references in regular expressions should only refer to capturing groups that are matched before the reference (java:S6001),java:S6001,Default:Red
+Call to printStackTrace(),cqse-print-stack-trace,Default:Yellow
+Calling contains on list,cqse-avoid-calling-contains-on-list,Default:Yellow
+Calling equals()/toString() on array,cqse-avoid-calling-equals-or-to-string-on-array,Default:Yellow
+"Case insensitive Unicode regular expressions should enable the ""UNICODE_CASE"" flag (java:S5866)",java:S5866,Default:Yellow
+Case insensitive string comparisons should be made without intermediate upper or lower casing (java:S1157),java:S1157,Default:Yellow
+Catch of generic exception,cqse-catch-high-level-exception,Default:Red
+Chained AssertJ assertions should be simplified to the corresponding dedicated assertion (java:S5838),java:S5838,Default:Yellow
+Character classes in regular expressions should not contain the same character twice (java:S5869),java:S5869,Default:Yellow
+Character classes should be preferred over reluctant quantifiers in regular expressions (java:S5857),java:S5857,Default:Yellow
+Cipher Block Chaining IVs should be unpredictable (java:S3329),java:S3329,Default:Red
+Class named like Exception should extend Exception or subclass,cqse-class-named-exception-should-extend-exception,Default:Yellow
+Classes and methods that rely on the default system encoding should not be used (java:S1943),java:S1943,Default:Yellow
+"Classes that override ""clone"" should be ""Cloneable"" and call ""super.clone()"" (java:S1182)",java:S1182,Default:Yellow
+Clones,Clones,Default:Yellow
+Collection constructors should not be used as java.util.function.Function (java:S5329),java:S5329,Default:Yellow
+Collection sizes and array length comparisons should make sense (java:S3981),java:S3981,Default:Red
+Commented-out code,Commented-out code,Default:Yellow
+Comments should not contain nested comments,cqse-nested-comment,Default:Yellow
+Constant Condition,cqse-constant-condition,Default:Yellow
+Counter Mode initialization vectors should not be reused (java:S6432),java:S6432,Default:Red
+Credentials should not be hard-coded (java:S6437),java:S6437,Default:Red
+Custom getter method should not be used to override record's getter behavior (java:S6211),java:S6211,Default:Yellow
+Custom serialization methods should have required signatures (java:S2061),java:S2061,Default:Red
+DateTimeFormatters should not use mismatched year and week numbers (java:S5917),java:S5917,Default:Yellow
+Deep Nesting,Deep Nesting,Default:Auto
+Derived exceptions should not hide their parents' catch blocks (java:S4970),java:S4970,Default:Yellow
+Discouraged Java Date/Time API usage,cqse-old-date-time-api-usage,Default:Yellow
+Discouraged constructor calls,cqse-unwanted-constructor-calls,Default:Yellow
+Discouraged method calls (Java),cqse-java-unwanted-method-calls,Default:Yellow
+Discouraged package imports,cqse-unwanted-import,Default:Yellow
+Division by zero,cqse-division-by-zero,Default:Red
+Do not compare instance of Optional and null,cqse-do-not-compare-optional-with-null,Default:Yellow
+Do not compare this and null,cqse-do-not-compare-this-with-null,Default:Yellow
+Do not perform unnecessary mathematical operations (java:S2185),java:S2185,Default:Red
+Do not use if statements to disable code,cqse-clike-no-if-zero-or-false,Default:Yellow
+Duplicate Set Elements,cqse-duplicate-set-elements,Default:Yellow
+Empty catch blocks,cqse-empty-catch-block,Default:Red
+Empty interface comment,Empty interface comment,Default:Yellow
+Equality check with boolean literal,cqse-equality-test-with-boolean-literal,Default:Yellow
+Equals method should be overridden in records containing array fields (java:S6218),java:S6218,Default:Yellow
+Exception stacktrace is lost,cqse-dont-hide-exception-stack-trace,Default:Yellow
+Exception thrown in finally block,cqse-throw-in-finally,Default:Yellow
+Exceptions should not be created without being thrown (java:S3984),java:S3984,Default:Yellow
+Field could be final,cqse-java-field-could-be-final,Default:Yellow
+Field dependency injection should be avoided (java:S6813),java:S6813,Default:Yellow
+File without code,cqse-missing-code,Default:Yellow
+For loop without initializer and update statements should be simplified to while loop,cqse-for-loop-should-be-while-loop,Default:Yellow
+Generic wildcard types should not be used in return types (java:S1452),java:S1452,Default:Yellow
+Getters and setters should access the expected fields (java:S4275),java:S4275,Default:Yellow
+Hard-coded password,cqse-hard-coded-password,Default:Yellow
+Hash-based collections with known capacity should be initialized with the proper related static method. (java:S6485),java:S6485,Default:Yellow
+Hashes should include an unpredictable salt (java:S2053),java:S2053,Default:Red
+Import from java.lang,cqse-java-lang-import,Default:Yellow
+Incorrect JavaDoc usage,cqse-java-doc-tag-completeness,Default:Yellow
+Instance-of usage for exception within catch-block,cqse-exception-instance-of-check-in-catch,Default:Yellow
+Interface comment completeness,Interface comment completeness,Default:Yellow
+JUnit4 @Ignored and JUnit5 @Disabled annotations should be used to disable tests and should provide a rationale (java:S1607),java:S1607,Default:Yellow
+JUnit5 inner test classes should be annotated with @Nested (java:S5790),java:S5790,Default:Yellow
+JUnit5 test classes and methods should not be silently ignored (java:S5810),java:S5810,Default:Yellow
+JWT should be signed and verified with strong cipher algorithms (java:S5659),java:S5659,Default:Red
+Java features should be preferred to Guava (java:S4738),java:S4738,Default:Yellow
+Java naming conventions,Java naming conventions,Default:Yellow
+Lambdas should not invoke other lambdas synchronously (java:S6246),java:S6246,Default:Yellow
+Long File,Long File,Default:Auto
+Long Method,Long Method,Default:Auto
+Lowercase literal suffix,cqse-lowercase-literal-suffix,Default:Yellow
+"Map ""computeIfAbsent()"" and ""computeIfPresent()"" should not be used to add ""null"" values. (java:S6104)",java:S6104,Default:Yellow
+Members ignored during record serialization should not be used (java:S6209),java:S6209,Default:Yellow
+Method always returns the same value,cqse-method-always-returns-same-value,Default:Yellow
+Method must not be named like constructor,cqse-same-name-as-constructor,Default:Yellow
+Method returns null but return type is Optional,cqse-method-returns-null-as-optional,Default:Red
+"Methods ""wait(...)"", ""notify()"" and ""notifyAll()"" should not be called on Thread instances (java:S2236)",java:S2236,Default:Red
+Methods setUp() and tearDown() should be correctly annotated starting with JUnit4 (java:S5826),java:S5826,Default:Yellow
+"Methods should not be named ""tostring"", ""hashcode"" or ""equal"" (java:S1221)",java:S1221,Default:Yellow
+Methods should not have too many parameters (Java),cqse-java-method-parameter-count,Default:Yellow
+"Methods with Spring proxy should not be called via ""this"" (java:S6809)",java:S6809,Default:Red
+Min and max used in combination should not always return the same value (java:S3065),java:S3065,Default:Red
+Missing braces for block statements,cqse-selection-and-iteration-compound-body,Default:Yellow
+Mobile database encryption keys should not be disclosed (java:S6301),java:S6301,Default:Red
+Modulus results should not be checked for direct equality (java:S2197),java:S2197,Default:Red
+Multiple assignments in same statement,cqse-multiple-assignments,Default:Yellow
+Multiple statements in same line,cqse-multiple-statements-per-line,Default:Yellow
+Multiple top-level classes,cqse-multiple-top-level-classes,Default:Red
+Names of regular expressions named groups should be used (java:S5860),java:S5860,Default:Yellow
+No star imports,cqse-no-star-imports,Default:Yellow
+Non-ASCII characters,cqse-invalid-character-in-identifier,Default:Yellow
+"Non-existent operators like ""=+"" should not be used (java:S2757)",java:S2757,Default:Yellow
+Non-singleton Spring beans should not be injected into singleton beans (java:S6832),java:S6832,Default:Yellow
+Non-thread-safe fields should not be static,cqse-public-class-thread-safety,Default:Yellow
+Nonsensical Binary Operation,cqse-nonsensical-binary-operations,Default:Yellow
+Null pointer dereference,Null pointer dereference,Default:Red
+Nullable injected fields and parameters should provide a default value (java:S6816),java:S6816,Default:Yellow
+Object comparison with the same Object,cqse-avoid-object-comparison-with-self,Default:Red
+Object reference comparison with itself,cqse-avoid-object-reference-comparison-with-self,Default:Red
+Octal constant usage,cqse-octal-constant,Default:Yellow
+OpenSAML2 should be configured to prevent authentication bypass (java:S5679),java:S5679,Default:Yellow
+"Operator ""instanceof"" should be used instead of ""A.class.isInstance()"" (java:S6202)",java:S6202,Default:Yellow
+Optional REST parameters should have an object type (java:S6814),java:S6814,Default:Yellow
+Passwords should not be stored in plain-text or with a fast hashing algorithm (java:S5344),java:S5344,Default:Red
+Permitted types of a sealed class should be omitted if they are declared in the same file (java:S6217),java:S6217,Default:Yellow
+Possible division by zero,Possible division by zero,Default:Red
+Post-Operator in return statement,cqse-post-operator-in-return-statement,Default:Yellow
+"Primitive wrappers should not be instantiated only for ""toString"" or ""compareTo"" calls (java:S1158)",java:S1158,Default:Yellow
+"Primitives should not be boxed just for ""String"" conversion (java:S2131)",java:S2131,Default:Yellow
+Private methods must not be final,cqse-private-methods-must-not-be-final,Default:Yellow
+Problem tags,Problem tags,Default:Red
+Properly initialize static variable,cqse-static-variables-init,Default:Yellow
+Public class attribute,cqse-public-class-attribute,Default:Yellow
+Raw types should not be used (java:S3740),java:S3740,Default:Yellow
+Redundant constructors/methods should be avoided in records (java:S6207),java:S6207,Default:Yellow
+Reflection should not be used to check non-runtime annotations (java:S2109),java:S2109,Default:Red
+"Reflection should not be used to increase accessibility of classes, methods, or fields (java:S3011)",java:S3011,Default:Yellow
+Reflection should not be used to increase accessibility of records' fields (java:S6216),java:S6216,Default:Red
+Regex alternatives should not be redundant (java:S5855),java:S5855,Default:Yellow
+Regex boundaries should not be used in a way that can never be matched (java:S5996),java:S5996,Default:Red
+Regex lookahead assertions should not be contradictory (java:S6002),java:S6002,Default:Red
+Regexes containing characters subject to normalization should use the CANON_EQ flag (java:S5854),java:S5854,Default:Yellow
+Regular expressions should be syntactically valid (java:S5856),java:S5856,Default:Red
+Regular expressions should not be too complicated (java:S5843),java:S5843,Default:Yellow
+Regular expressions should not contain empty groups (java:S6331),java:S6331,Default:Yellow
+Regular expressions should not overflow the stack (java:S5998),java:S5998,Default:Yellow
+Reluctant quantifiers in regular expressions should be followed by an expression that can't match the empty string (java:S6019),java:S6019,Default:Yellow
+Repeated patterns in regular expressions should not match the empty string (java:S5842),java:S5842,Default:Yellow
+Repeated subcondition,cqse-repeated-subcondition,Default:Yellow
+Restricted Identifiers should not be used as Identifiers (java:S6213),java:S6213,Default:Yellow
+Return empty collection instead of a null value,cqse-collections-return-null,Default:Yellow
+Return in finally block,cqse-return-in-finally,Default:Yellow
+Return value null dereferencing,cqse-return-value-null-dereference,Default:Red
+Same package import,cqse-same-package-import,Default:Yellow
+Short-circuit logic should be used in boolean contexts (java:S2178),java:S2178,Default:Red
+Single-character alternations in regular expressions should be replaced with character classes (java:S6035),java:S6035,Default:Yellow
+SpEL expression should have a valid syntax (java:S6857),java:S6857,Default:Red
+Specify new Logger instances with current class,cqse-logger-with-wrong-specified-class,Default:Yellow
+Statements in Conditional Expression are equal,cqse-conditional-statements-equal,Default:Yellow
+String interpolation argument number check,cqse-string-interpolation,Default:Red
+String operations with predictable outcomes should be avoided (java:S2121),java:S2121,Default:Yellow
+"Strings and Boxed types should be compared using ""equals()"" (java:S4973)",java:S4973,Default:Yellow
+Superfluous toString() calls,cqse-to-string-call-on-string,Default:Yellow
+Suspicious methods,cqse-suspicious-methods,Default:Yellow
+Switch statement should have a well-placed default label,cqse-switch-statement-demands-default-label-well-placed,Default:Red
+Synchronization should not be done on instances of value-based classes (java:S1860),java:S1860,Default:Red
+Task tags,Task tags,Default:Yellow
+Test class naming convention,cqse-test-class-naming-convention,Default:Yellow
+Test for NaN correctly,cqse-test-for-nan-correctly,Default:Red
+Tests method should not be annotated with competing annotations (java:S5967),java:S5967,Default:Yellow
+Tests should be stable (java:S5973),java:S5973,Default:Yellow
+Text blocks should not be used in complex expressions (java:S6203),java:S6203,Default:Yellow
+"The ""Object.finalize()"" method should not be called (java:S1111)",java:S1111,Default:Red
+"The ""Object.finalize()"" method should not be overridden (java:S1113)",java:S1113,Default:Yellow
+The regex escape sequence \cX should only be used with characters in the @-_ range (java:S6070),java:S6070,Default:Yellow
+"The signature of ""finalize()"" should match that of ""Object.finalize()"" (java:S1175)",java:S1175,Default:Yellow
+"The upper bound of type variables and wildcards should not be ""final"" (java:S4968)",java:S4968,Default:Yellow
+Throw of generic exception in Java,cqse-throw-highlevel-java-exceptions,Default:Red
+Transformation of byte sequence into String must consider encoding,cqse-constructor-call-without-encoding,Default:Yellow
+Type parameters should not shadow other type parameters (java:S4977),java:S4977,Default:Yellow
+Type uses name from java.lang,cqse-java-lang-name,Default:Yellow
+Unit test class location,cqse-unit-test-package-match,Default:Yellow
+Unmatched Types,Unmatched Types,Default:Yellow
+Unnecessary bit operations should not be performed (java:S2437),java:S2437,Default:Red
+Unnecessary boxing and unboxing should be avoided (java:S2153),java:S2153,Default:Yellow
+Unnecessary creation of pre-defined BigInteger/BigDecimal object,cqse-unnecessary-big-integer-instantiation,Default:Yellow
+Unnecessary parameterless super constructor call,cqse-unnecessary-super-constructor-call,Default:Yellow
+Unreachable code after exit statement,cqse-unreachable-code-after-exit-statement,Default:Yellow
+Unrelated interface comment,Unrelated interface comment,Default:Yellow
+Unused variable or parameter,Unused variable or parameter,Default:Yellow
+Unused/duplicated imports (Java),cqse-java-unused-imports,Default:Yellow
+Unwanted catch of Exception (Java),cqse-java-catch-unwanted-exception,Default:Yellow
+"Use of the ""@Async"" annotation on methods declared within a ""@Configuration"" class in Spring Boot (java:S6817)",java:S6817,Default:Yellow
+Value-based classes should not be used for locking (java:S3436),java:S3436,Default:Red
+Variables should not be self-assigned (java:S1656),java:S1656,Default:Red
+Whitespace and control characters in literals should be explicit (java:S2479),java:S2479,Default:Yellow
+XML parsers should not allow inclusion of arbitrary files (java:S6373),java:S6373,Default:Red
+XML parsers should not be vulnerable to Denial of Service attacks (java:S6376),java:S6376,Default:Red
+XML parsers should not load external schemas (java:S6374),java:S6374,Default:Red
+XML signatures should be validated securely (java:S6377),java:S6377,Default:Red
+Zero should not be a possible denominator (java:S3518),java:S3518,Default:Red
+New exception is created but not thrown,cqse-missing-throw-before-new-exception,Default:Red
+assertThat(..) calls should be followed by an assertion specification (excluding .as(..)),cqse-correct-assert-that-assertions,Default:Yellow
+finalize() may not be overwritten,cqse-finalize-overridden,Default:Yellow
+hashCode() and equals(),cqse-hash-code-and-equals,Default:Yellow

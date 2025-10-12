@@ -1,0 +1,7 @@
+{
+    "successful_projects": "../../../data/successful_projects.csv",
+    "best_method_results_dir": "../../../data/correlation_results/pearsonr_results/",
+    "output_dir": "../../../data/reporting/RQ2/",
+    "checks": "../../../data/checks.csv",
+    "checks_index_color": "../../../data/checks_index_color.csv"
+}

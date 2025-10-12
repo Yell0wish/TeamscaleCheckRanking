@@ -1,0 +1,7 @@
+{
+    "checks_index_color": "../../../data/checks_index_color.csv",
+    "dataset_dir": "../../../data/dataset/",
+    "successful_projects": "../../../data/successful_projects.csv",
+    "output_dir": "../../../data/reporting/RQ4/",
+    "rp_csv": "../../../data/reporting/RQ2/rp_gmean.csv"
+}

@@ -1,0 +1,16 @@
+{
+    "Teamscale_path": "path/to/teamscale-v2024.9.1/teamscale",
+    "Teamscale_url": "http://localhost:8080",
+    "Teamscale_username": "admin",
+    "Teamscale_access_token": "your_access_token_here",
+    "Teamscale_working_dir": "path/to/teamscale_working_dir",
+    "Teamscale_java_profile": "../../data/Java-default-.tsanalysisprofile",
+    "finding_churns_raw_dir": "../../data/finding_churns_raw/",
+    "finding_churns_processed_dir": "../../data/finding_churns_processed/",
+    "line_level_bug_labels_dir": "path/to/BugDet/Dataset/Line-level/",
+    "file_level_bug_labels_dir": "path/to/BugDet/Dataset/File-level/",
+    "successful_projects": "../../data/successful_projects.csv",
+    "repos_dir": "path/to/your_project_repos/",
+    "checks": "../../data/checks.csv",
+    "dataset_output_dir": "../../data/dataset/"
+}

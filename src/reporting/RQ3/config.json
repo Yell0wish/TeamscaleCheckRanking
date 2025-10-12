@@ -1,0 +1,4 @@
+{
+    "global_checks_ranking": "../../../data/global_checks_ranking.csv",
+    "output_dir": "../../../data/reporting/RQ3/"
+}

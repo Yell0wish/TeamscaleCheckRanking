@@ -1,0 +1,6 @@
+{
+    "successful_projects": "../../data/successful_projects.csv",
+    "dataset_output_dir": "../../data/dataset/",
+    "PFI_results_dir": "../../data/PFI_results/",
+    "correlation_results_dir": "../../data/correlation_results/"
+}
