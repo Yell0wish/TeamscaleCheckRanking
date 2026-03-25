@@ -21,10 +21,10 @@ plt.rcParams["font.family"] = "Arial"
 data = pd.DataFrame({
     "Method": ["AdaBoost", "Bagging", "Balanced Bagging", "Balanced Random Forest", "Naive Bayes",
                "Extra Trees", "Gradient Boosting", "LightGBM", "Logistic Regression", "Pearson",
-               "Random Forest", "XGBoost"],
-    "Time": [1787.51, 532.35, 533.52, 304.84, 196.75, 300.57, 271.53, 119.65, 132.44, 1.27, 317.46, 97.86]
+               "Random Forest", "XGBoost", 
+               "deepseek-chat-Rank", "deepseek-chat-Score", "deepseek-reasoner-Rank", "deepseek-reasoner-Score"],
+    "Time": [1751.05, 516.55, 520.17, 256.06, 187.96, 272.23, 266.38, 112.13, 127.31, 1.31, 270.60, 86.88, 6.64, 84.95, 23.27, 424.58]
 })
-
 # 按耗时排序
 data_sorted = data.sort_values("Time", ascending=False)
 

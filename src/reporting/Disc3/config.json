@@ -1,0 +1,7 @@
+{
+    "successful_projects": "../../../data/successful_projects.csv",
+    "best_method_results_dir": "../../../data/correlation_results/pearsonr_results/",
+    "output_dir": "../../../data/reporting/Disc3/",
+    "dataset_dir": "../../../data/dataset/",
+    "rp_path": "../../../data/reporting/RQ2/rp_gmean.csv"
+}

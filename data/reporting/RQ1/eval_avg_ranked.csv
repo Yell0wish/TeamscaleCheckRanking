@@ -1,0 +1,17 @@
+Method,R@20%,IFA,Accuracy@10,E@20%R,PMI@20%
+AdaBoost,12,7,5,10,10
+Bagging,5,9,8,8,12
+Balanced Bagging,2,2,3,3,15
+Balanced Random Forest,8,4,4,2,16
+Naive Bayes,9,8,9,11,6
+Extra Trees,4,6,12,6,8
+Gradient Boosting,6,3,2,9,11
+LightGBM,10,10,6,12,7
+Logistic Regression,11,5,10,4,13
+Pearson,1,1,1,1,5
+Random Forest,3,12,11,7,9
+XGBoost,7,11,7,5,14
+deepseek-chat-Rank,16,16,16,16,1
+deepseek-chat-Score,15,15,14,15,2
+deepseek-reasoner-Rank,13,13,15,13,4
+deepseek-reasoner-Score,14,14,13,14,3

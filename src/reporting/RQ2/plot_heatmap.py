@@ -43,11 +43,12 @@ DATASET_PROJECT_MAP = {
     "zookeeper": "zookeeper"
 }
 
-check76_list = []
+check57_list = []
+check65_list = []
 check96_list = []
-check108_list = []
 check116_list = []
 check163_list = []
+check219_list = []
 check220_list = []
 
 
@@ -76,17 +77,19 @@ def get_rank_from_triplet(check_id, project_name, version_list) -> list:
         rank = df.index[df["feature"] == feature_name][0] + 1
         rank_in_project.append(rank)
 
-        if check_id == 76 and rank > 11:
-            check76_list.append((project_name, version_list[i], version_list[i+1]))
-        if check_id == 96 and rank > 19:
+        if check_id == 57 and rank > 21:
+            check57_list.append((project_name, version_list[i], version_list[i+1]))
+        if check_id == 65 and rank > 229:
+            check65_list.append((project_name, version_list[i], version_list[i+1]))
+        if check_id == 96 and rank > 22:
             check96_list.append((project_name, version_list[i], version_list[i+1]))
-        if check_id == 108 and rank > 23:
-            check108_list.append((project_name, version_list[i], version_list[i+1]))
-        if check_id == 116 and rank > 14.5:
+        if check_id == 116 and rank > 16.5:
             check116_list.append((project_name, version_list[i], version_list[i+1]))
-        if check_id == 163 and rank > 18.5:
+        if check_id == 163 and rank > 22:
             check163_list.append((project_name, version_list[i], version_list[i+1]))
-        if check_id == 220 and rank > 14.5:
+        if check_id == 219 and rank > 22.5:
+            check219_list.append((project_name, version_list[i], version_list[i+1]))
+        if check_id == 220 and rank > 14:
             check220_list.append((project_name, version_list[i], version_list[i+1]))
 
     return rank_in_project
@@ -199,15 +202,15 @@ def build_jaccard_df(lists_dict: dict) -> pd.DataFrame:
 def main():
 
     for check_id in range(235):
-        if check_id != 76 and check_id != 116 and check_id != 220 and check_id != 96 and check_id != 163 and check_id != 108:
+        if check_id != 65 and check_id != 116 and check_id != 220 and check_id != 96 and check_id != 163 and check_id != 57 and check_id != 219:
             continue
         rank_in_all = get_rank_from_all(check_id)
         print(f"Check ID: {check_id}")
         median_value = np.median(rank_in_all)
         print(f"Median: {median_value}")
     
-    intersection = set(check76_list) & set(check96_list) & set(check108_list) \
-               & set(check116_list) & set(check163_list) & set(check220_list)
+    intersection = set(check57_list) & set(check65_list) & set(check96_list) \
+               & set(check116_list) & set(check163_list) & set(check219_list) & set(check220_list)
     # print(set(check76_list) & set(check96_list))
     # print(check76_list)
     # print(check96_list)
@@ -219,11 +222,12 @@ def main():
 
 
     lists = {
-        76: check76_list,
+        57: check57_list,
+        65: check65_list,
         96: check96_list,
-        108: check108_list,
         116: check116_list,
         163: check163_list,
+        219: check219_list,
         220: check220_list
     }
     df_jac = build_jaccard_df(lists)

@@ -161,7 +161,7 @@ def analyze_corr_feature_ranking(corr_dfs):
 
 def log_init():
     os.makedirs(RESULTS_DIR, exist_ok=True)
-    log_file_path = RESULTS_DIR / f".log"
+    log_file_path = RESULTS_DIR / f"correlation.log"
 
     logging.basicConfig(
         level=logging.INFO,

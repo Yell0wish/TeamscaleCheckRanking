@@ -7,50 +7,67 @@
 
 ## 1. Directory Structure
 
-Below is a description of the key folders and their contents:
-
 - **[`/data`](./data/)**
   
-  Contains both the input data and the experimental outputs used in the paper.
+  Contains the released datasets, prompts, and experimental outputs used in the paper.
   
   - [`/data/dataset`](./data/dataset/)
-  
-    Stores the datasets used in this study, covering 17 projects with 134 releases in total.
+    
+    Teamscale dataset files for the 17 subject projects (134 releases in total).
   
   - [`/data/reporting`](./data/reporting/)
-  
-    Stores the experimental results reported in the paper.
+    
+    Tables and figures reported in the paper.
 
 - **[`/src`](./src/)**
-
-  Contains the source code written in Python.
-
+  
+  Contains the Python scripts for each stage of the study.
+  
   - [`/src/dataset_builder`](./src/dataset_builder/)
+    
+    Build the dataset from Teamscale findings and bug labels.
+  
+  - [`/src/check_ranking`](./src/check_ranking/)
+    
+    Compute check rankings, including PFI, correlation-based, and LLM-based methods.
+  
+  - [`/src/ranking_eval`](./src/ranking_eval/)
+    
+    Evaluate the most reliable ranking method.
+  
+  - [`/src/reporting`](./src/reporting/)
+    
+    Generate the tables and figures used in the paper.
+  
+  - [`/src/generalization`](./src/generalization/)
+    
+    Scripts for the PMD and Semgrep generalization experiments.
 
-    Scripts for constructing datasets.
+## 2. Requirements
 
-  - [`/src/check_ranking`](./src/check_ranking)
+The code can be run in a standard Python environment. In most cases, reproducing the released results does not require heavy setup or a GPU, and the scripts can be run on CPU. Some optional stages, such as the LLM-based ranking scripts, additionally require API access.
 
-    Scripts for implementing check-ranking methods, including PFI and correlation analysis.
+- Install the common Python dependencies with `pip install -r requirements.txt`.
+- Some submodules have additional dependencies. Install the local `requirements.txt` in the corresponding folder when needed, for example:
+  - `src/dataset_builder/requirements.txt`
+  - `src/check_ranking/llm_methods/requirements.txt`
+  - `src/reporting/RQ1/requirements.txt`, `RQ2/requirements.txt`, `RQ3/requirements.txt`
+  - `src/generalization/semgrep/requirements.txt`
+- Update the `config.json` files before running scripts, especially the local paths for datasets, output folders, repositories, and external tools.
 
-  - [`/src/ranking_eval`](./src/ranking_eval)
+Additional resources are only needed for some stages:
 
-    Scripts for evaluating the effectiveness of ranking methods.
+- To rebuild the dataset from scratch, install and configure **Teamscale**, and download the bug annotation data from [`BugDet/Dataset`](https://github.com/Naplues/BugDet/tree/master/Dataset), and prepare the source code of the corresponding ASF java projects locally.
+- To rebuild the PMD or Semgrep datasets, install the required versions of PMD or Semgrep, respectively. For Semgrep, also clone the `semgrep-rules` repository from GitHub.
+- To run the LLM-based ranking scripts, provide the required API keys in `src/check_ranking/llm_methods/`.
 
-  - [`/src/reporting`](./src/reporting)
+## 3. Running the Code
 
-    Scripts for generating experimental results reported in the paper.
+In most folders, you can run the provided `run.sh` script directly. If no shell script is provided, execute the Python file manually.
 
-## 2. Running the Code
+Typical workflow:
 
-1. Update the paths in `config.json` to match your local environment.
-2. If a shell script (`.sh`) is provided in the folder, run `script_name.sh` directly.
-3. If no shell script is provided, run `python file_name.py` instead.
-
-### Additional Requirement
-
-To reproduce the dataset construction: 
-
-- Download the **bug annotation data** from [`BugDet/dataset/`](https://github.com/Naplues/BugDet/tree/master/Dataset).
-
-- Install and configure **Teamscale**.
+1. Build the dataset with scripts in [`src/dataset_builder`](./src/dataset_builder/) if you want to reproduce the data collection process.
+2. Compute rankings with scripts in [`src/check_ranking`](./src/check_ranking/).
+3. Evaluate the ranking methods with scripts in [`src/ranking_eval`](./src/ranking_eval/).
+4. Regenerate paper results with scripts in [`src/reporting`](./src/reporting/).

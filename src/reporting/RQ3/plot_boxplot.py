@@ -84,8 +84,6 @@ def plot_severity_box_from_csv(
     value_col: str = "RP value",
     severity_col: str = "Severity",
     save_svg: str = "severity_rank_box.svg",
-    run_mwu: bool = True,
-    mwu_alternative: str = "two-sided"  # 'two-sided' | 'less' | 'greater'
 ):
 
     df = pd.read_csv(csv_path)
@@ -106,14 +104,6 @@ def plot_severity_box_from_csv(
 
     if red_ranks.size == 0 or yel_ranks.size == 0:
         raise ValueError(f"RED (n={red_ranks.size}) 或 YELLOW (n={yel_ranks.size}) 为空，无法绘图。")
-
-    # 统计
-    mwu_text = ""
-    if run_mwu:
-        U, p = mannwhitneyu(red_ranks, yel_ranks, alternative=mwu_alternative, method="auto")
-        # 方向提醒：如果用 'less'，含义是检验 RED 的秩是否更小（更好）
-        mwu_text = f" | Mann–Whitney U: U={U:.0f}, p={p:.4f}, alt='{mwu_alternative}'"
-        print(f"[MWU] RED vs YELLOW {mwu_text}")
 
     # 画图
     # 宽度跟随组数（这里只有两个箱子，给一点横向空间即可）
@@ -143,6 +133,4 @@ if __name__ == "__main__":
         value_col="RP value",
         severity_col="Severity",
         save_svg= Path(config["output_dir"]) / "severity_rank_box.svg",
-        run_mwu=True,
-        mwu_alternative="less"  # 检验 RED 的 rank 是否更小（更好）
     )

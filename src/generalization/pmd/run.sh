@@ -1,0 +1,4 @@
+python get_rules.py
+python get_raw_violations.py
+python get_processed_violations.py
+python create_pd_dataset.py

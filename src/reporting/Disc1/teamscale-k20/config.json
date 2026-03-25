@@ -1,0 +1,5 @@
+{
+    "successful_projects": "../../../../data/successful_projects.csv",
+    "dataset_output_dir": "../../../../data/dataset/",
+    "eval_results_dir": "../../../../data/reporting/Disc1/teamscale-k20/"
+}

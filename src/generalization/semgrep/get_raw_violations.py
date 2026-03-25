@@ -1,0 +1,82 @@
+import subprocess
+import pandas as pd
+import re
+from pathlib import Path
+import json
+
+def load_config(config_path: str = "config.json"):
+    cfg = {}
+    p = Path(config_path)
+    if not p.exists():
+        raise FileNotFoundError(f"配置文件 {config_path} 不存在")
+    with open(p, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+
+    return cfg
+
+config = load_config()
+
+NEW_REPOS_PATH = Path(config["repos_dir"])
+
+# 读取 CSV 文件并生成字典
+def load_commit_dict(file_path):
+    """
+    从 CSV 文件中读取 File Name 和 Commit Hash 并返回一个字典
+    """
+    try:
+        # 使用 pandas 读取 CSV 文件
+        df = pd.read_csv(file_path)
+        
+        # 将 'File Name' 列作为键，'Commit Hash' 列作为值，生成字典
+        commit_dict = pd.Series(df['Commit Hash'].values, index=df['File Name']).to_dict()
+        
+        return commit_dict
+    except FileNotFoundError:
+        print(f"文件 {file_path} 未找到，请检查路径！")
+        return {}
+    except KeyError:
+        print("文件中没有找到 'File Name' 或 'Commit Hash' 列，请确认文件格式！")
+        return {}
+    
+
+
+commit_dict = load_commit_dict(Path(config["successful_projects"]))
+
+
+
+for index, file_name in enumerate(commit_dict.keys()):
+    pattern = r"(\w+)-([\d\.]+)"
+    match = re.search(pattern, file_name)
+    assert match is not None
+    name = match.group(1)  # 形如"ambari"
+    version = match.group(2)  # 形如"1.2.0"
+
+    # if f'{name}-{version}' != "amq-5.14.0":
+    #     continue
+
+    repo_path=NEW_REPOS_PATH / f'{name}-{version}'
+    print(f"Processing {index+1}/{len(commit_dict)}: {repo_path}")
+
+    base_output_dir = Path(config["output_dir"]) / "raw_data"
+    base_output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = base_output_dir / f"{name}-{version}-semgrep.json"
+
+
+    cmd = [
+        "semgrep", "scan",
+        "--config", config["semgrep_rules_dir"],
+        "--json-output", rf"{output_path}",
+        rf"{repo_path}",
+        "--max-target-bytes", "0",
+    ]
+
+
+    try:
+        subprocess.run(
+            cmd,
+            check=True,
+        )
+        print("Semgrep ok.")
+    except subprocess.CalledProcessError as e:
+        print("Semgrep failed, returncode =", e.returncode)
+        break

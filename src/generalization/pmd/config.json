@@ -1,0 +1,9 @@
+{
+    "pmd_rules_dir": "path/to/pmd-java-6.55.0/category/java",
+    "output_dir": "../../../data/generalization/pmd",
+    "repos_dir": "path/to/your_project_repos/",
+    "successful_projects": "../../../data/successful_projects.csv",
+    "pmd_bin": "path/to/pmd-bin-6.55.0/bin/run.sh",
+    "line_level_bug_labels_dir": "path/to/BugDet/Dataset/Line-level/",
+    "file_level_bug_labels_dir": "path/to/BugDet/Dataset/File-level/"
+}

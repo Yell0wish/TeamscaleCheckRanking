@@ -1,236 +1,236 @@
 ID,Name,Severity,RP value
-119,Long Method,YELLOW,2.3461071120108827
-77,Deep Nesting,YELLOW,5.698690717726024
-118,Long Method,RED,6.773528117844599
-117,Long File,YELLOW,13.219189833276207
-76,Deep Nesting,RED,18.427994250390043
-116,Long File,RED,19.64111814787231
-139,No star imports,YELLOW,21.213189959222102
-220,Unused/duplicated imports (Java),YELLOW,22.224661108920063
-96,Field could be final,YELLOW,34.36864060652928
-150,OpenSAML2 should be configured to prevent authentication bypass (java:S5679),YELLOW,34.75914581637686
-148,Object reference comparison with itself,RED,35.14707533586482
-146,Nullable injected fields and parameters should provide a default value (java:S6816),YELLOW,35.174988233275215
-147,Object comparison with the same Object,RED,35.24560811581458
-163,Raw types should not be used (java:S3740),YELLOW,36.76723500103427
-142,Non-singleton Spring beans should not be injected into singleton beans (java:S6832),YELLOW,37.08389028025319
-152,Optional REST parameters should have an object type (java:S6814),YELLOW,37.30832044479479
-153,Passwords should not be stored in plain-text or with a fast hashing algorithm (java:S5344),RED,38.00794093514201
-108,Interface comment completeness,YELLOW,38.6022981838767
-140,Non-ASCII characters,YELLOW,39.37914621744322
-141,"Non-existent operators like ""=+"" should not be used (java:S2757)",YELLOW,39.68009729917452
-114,Java naming conventions,YELLOW,40.47996033332632
-219,Unused variable or parameter,YELLOW,40.49964460821835
-154,Permitted types of a sealed class should be omitted if they are declared in the same file (java:S6217),YELLOW,40.821353715943104
-138,Names of regular expressions named groups should be used (java:S5860),YELLOW,41.81652360734649
-156,Post-Operator in return statement,YELLOW,42.69742334891364
-188,Statements in Conditional Expression are equal,YELLOW,43.24511306540464
-134,Modulus results should not be checked for direct equality (java:S2197),RED,43.58987265797659
-122,Members ignored during record serialization should not be used (java:S6209),YELLOW,44.65866994366422
-127,Methods setUp() and tearDown() should be correctly annotated starting with JUnit4 (java:S5826),YELLOW,44.77062040040523
-1,"""@Autowired"" should only be used on a single constructor (java:S6818)",YELLOW,45.00849119203341
-121,"Map ""computeIfAbsent()"" and ""computeIfPresent()"" should not be used to add ""null"" values. (java:S6104)",YELLOW,45.37211281231806
-57,Catch of generic exception,RED,45.42126841383394
-130,"Methods with Spring proxy should not be called via ""this"" (java:S6809)",RED,45.69620921102069
-131,Min and max used in combination should not always return the same value (java:S3065),RED,46.10514917078948
-133,Mobile database encryption keys should not be disclosed (java:S6301),RED,46.35954065321541
-144,Nonsensical Binary Operation,YELLOW,47.04877695910496
-126,"Methods ""wait(...)"", ""notify()"" and ""notifyAll()"" should not be called on Thread instances (java:S2236)",RED,47.30752155643391
-125,Method returns null but return type is Optional,RED,47.3091464187171
-115,Lambdas should not invoke other lambdas synchronously (java:S6246),YELLOW,48.02027249043619
-65,Clones,YELLOW,48.48320706427079
-207,Throw of generic exception in Java,RED,52.39313003116008
-149,Octal constant usage,YELLOW,52.79827429342102
-124,Method must not be named like constructor,YELLOW,53.390091197615966
-113,Java features should be preferred to Guava (java:S4738),YELLOW,54.06742284835457
-112,JWT should be signed and verified with strong cipher algorithms (java:S5659),RED,56.408032015755886
-145,Null pointer dereference,RED,56.58787072150445
-161,Properly initialize static variable,YELLOW,57.45388783922488
-128,"Methods should not be named ""tostring"", ""hashcode"" or ""equal"" (java:S1221)",YELLOW,58.21224003054734
-164,Redundant constructors/methods should be avoided in records (java:S6207),YELLOW,58.55207143507429
-111,JUnit5 test classes and methods should not be silently ignored (java:S5810),YELLOW,59.80996417019643
-93,Exception stacktrace is lost,YELLOW,60.74518734646208
-50,Avoid using ternary operators,YELLOW,61.79359468896641
-155,Possible division by zero,RED,62.73252142589633
-120,Lowercase literal suffix,YELLOW,63.32829725564427
-143,Non-thread-safe fields should not be static,YELLOW,63.39139487092716
-110,JUnit5 inner test classes should be annotated with @Nested (java:S5790),YELLOW,65.7467684951654
-205,"The signature of ""finalize()"" should match that of ""Object.finalize()"" (java:S1175)",YELLOW,66.36835611014567
-165,Reflection should not be used to check non-runtime annotations (java:S2109),RED,66.60512438116268
-159,Private methods must not be final,YELLOW,69.44785255833455
-151,"Operator ""instanceof"" should be used instead of ""A.class.isInstance()"" (java:S6202)",YELLOW,69.93948588037281
-227,XML parsers should not be vulnerable to Denial of Service attacks (java:S6376),RED,71.07193970743734
-211,Unit test class location,YELLOW,71.46571766777083
-228,XML parsers should not load external schemas (java:S6374),RED,71.83577613453835
-167,Reflection should not be used to increase accessibility of records' fields (java:S6216),RED,71.86676966657053
-204,The regex escape sequence \cX should only be used with characters in the @-_ range (java:S6070),YELLOW,72.91921910376803
-229,XML signatures should be validated securely (java:S6377),RED,73.63988312729047
-232,assertThat(..) calls should be followed by an assertion specification (excluding .as(..)),YELLOW,73.96673949804004
-157,"Primitive wrappers should not be instantiated only for ""toString"" or ""compareTo"" calls (java:S1158)",YELLOW,74.0179341780523
-212,Unmatched Types,YELLOW,74.41085988361262
-189,String interpolation argument number check,RED,75.08380215532718
-208,Transformation of byte sequence into String must consider encoding,YELLOW,75.09044475587005
-202,"The ""Object.finalize()"" method should not be called (java:S1111)",RED,75.09961158265281
-224,Variables should not be self-assigned (java:S1656),RED,75.32929253243094
-231,New exception is created but not thrown,RED,75.37657479999989
-201,Text blocks should not be used in complex expressions (java:S6203),YELLOW,75.51395776493928
-168,Regex alternatives should not be redundant (java:S5855),YELLOW,75.55748862190012
-158,"Primitives should not be boxed just for ""String"" conversion (java:S2131)",YELLOW,76.37524684304472
-225,Whitespace and control characters in literals should be explicit (java:S2479),YELLOW,76.70393831731937
-226,XML parsers should not allow inclusion of arbitrary files (java:S6373),RED,77.07086065473712
-213,Unnecessary bit operations should not be performed (java:S2437),RED,77.15414706565677
-222,"Use of the ""@Async"" annotation on methods declared within a ""@Configuration"" class in Spring Boot (java:S6817)",YELLOW,77.3984568116571
-136,Multiple statements in same line,YELLOW,78.27765090232998
-81,Discouraged method calls (Java),YELLOW,78.68528301090214
-200,Tests should be stable (java:S5973),YELLOW,78.69008359540626
-217,Unreachable code after exit statement,YELLOW,78.76450836034716
-223,Value-based classes should not be used for locking (java:S3436),RED,78.79875319570718
-203,"The ""Object.finalize()"" method should not be overridden (java:S1113)",YELLOW,79.72989271003728
-221,Unwanted catch of Exception (Java),YELLOW,80.27049313184239
-109,JUnit4 @Ignored and JUnit5 @Disabled annotations should be used to disable tests and should provide a rationale (java:S1607),YELLOW,81.13843094241817
-47,Avoid unused private fields (Java),YELLOW,81.50336657523735
-170,Regex lookahead assertions should not be contradictory (java:S6002),RED,82.01160327564479
-171,Regexes containing characters subject to normalization should use the CANON_EQ flag (java:S5854),YELLOW,82.9718999129203
-199,Tests method should not be annotated with competing annotations (java:S5967),YELLOW,83.77719459370252
-36,Avoid C-style array declarations in Java,YELLOW,84.2152185387586
-123,Method always returns the same value,YELLOW,84.28731166505558
-209,Type parameters should not shadow other type parameters (java:S4977),YELLOW,84.47140321890944
-206,"The upper bound of type variables and wildcards should not be ""final"" (java:S4968)",YELLOW,84.85845592888583
-169,Regex boundaries should not be used in a way that can never be matched (java:S5996),RED,84.96742529192328
-0,"""@Autowired"" should be used when multiple constructors are provided (java:S6829)",YELLOW,84.98302970999212
-183,Same package import,YELLOW,85.70836648711077
-173,Regular expressions should not be too complicated (java:S5843),YELLOW,85.89518146024452
-172,Regular expressions should be syntactically valid (java:S5856),RED,86.44208100183077
-132,Missing braces for block statements,YELLOW,86.86358611748298
-233,finalize() may not be overwritten,YELLOW,87.62355855235622
-230,Zero should not be a possible denominator (java:S3518),RED,87.8922802335122
-174,Regular expressions should not contain empty groups (java:S6331),YELLOW,88.92096861511173
-175,Regular expressions should not overflow the stack (java:S5998),YELLOW,89.0816124602052
-198,Test for NaN correctly,RED,89.54510606955759
-176,Reluctant quantifiers in regular expressions should be followed by an expression that can't match the empty string (java:S6019),YELLOW,89.7052597914381
-181,Return in finally block,YELLOW,89.7992245746033
-129,Methods should not have too many parameters (Java),YELLOW,90.88424472485156
-197,Test class naming convention,YELLOW,91.0193467763888
-186,SpEL expression should have a valid syntax (java:S6857),RED,91.99036614198644
-3,"""@Deprecated"" code marked for removal should never be used (java:S5738)",YELLOW,92.51944790125486
-215,Unnecessary creation of pre-defined BigInteger/BigDecimal object,YELLOW,93.74995288654252
-79,Discouraged Java Date/Time API usage,YELLOW,95.5128365539314
-214,Unnecessary boxing and unboxing should be avoided (java:S2153),YELLOW,96.26721305647015
-190,String operations with predictable outcomes should be avoided (java:S2121),YELLOW,96.93659206724686
-179,Restricted Identifiers should not be used as Identifiers (java:S6213),YELLOW,97.3266193340343
-178,Repeated subcondition,YELLOW,98.25391923043424
-187,Specify new Logger instances with current class,YELLOW,101.74067849600615
-137,Multiple top-level classes,RED,102.49866941509046
-52,Call to printStackTrace(),YELLOW,103.0911953894786
-162,Public class attribute,YELLOW,104.34707853226452
-177,Repeated patterns in regular expressions should not match the empty string (java:S5842),YELLOW,105.97642668345785
-194,Switch statement should have a well-placed default label,RED,106.11151661174668
-53,Calling contains on list,YELLOW,106.31856861912844
-41,Avoid creating SimpleDateFormat objects without specifying the Locale,YELLOW,107.63663449330276
-104,Hashes should include an unpredictable salt (java:S2053),RED,108.15231355794948
-185,Single-character alternations in regular expressions should be replaced with character classes (java:S6035),YELLOW,108.25156075364212
-182,Return value null dereferencing,RED,108.76124976464332
-107,Instance-of usage for exception within catch-block,YELLOW,109.33119357227532
-91,Equality check with boolean literal,YELLOW,112.6642938042444
-135,Multiple assignments in same statement,YELLOW,114.69024074854715
-184,Short-circuit logic should be used in boolean contexts (java:S2178),RED,115.00846514084344
-103,Hash-based collections with known capacity should be initialized with the proper related static method. (java:S6485),YELLOW,115.16690182041248
-216,Unnecessary parameterless super constructor call,YELLOW,115.499381369849
-195,Synchronization should not be done on instances of value-based classes (java:S1860),RED,116.5548942552479
-180,Return empty collection instead of a null value,YELLOW,116.66162874913262
-11,"""entrySet()"" should be iterated when both the key and value are needed (java:S2864)",YELLOW,118.4708039082285
-40,Avoid continue and break with label,YELLOW,118.88495925590432
-48,Avoid unused private methods (Java),YELLOW,120.09303479972095
-105,Import from java.lang,YELLOW,121.81440239271112
-39,Avoid conditional expressions of the form if (true...,YELLOW,123.72719276416218
-32,Assertions should not compare an object to itself (java:S5863),YELLOW,124.24422888176348
-192,Superfluous toString() calls,YELLOW,124.47056108107078
-102,Hard-coded password,YELLOW,124.50058618436928
-80,Discouraged constructor calls,YELLOW,124.54113829905788
-33,Assignment of a variable to itself,YELLOW,124.71562069508992
-35,Authorizations should be based on strong decisions (java:S5808),YELLOW,125.27309434065464
-191,"Strings and Boxed types should be compared using ""equals()"" (java:S4973)",YELLOW,125.27859650551582
-34,Async methods should return void or Future (java:S6810),YELLOW,126.03706647629429
-30,AssertJ methods setting the assertion context should come before an assertion (java:S5833),YELLOW,126.08691156636355
-25,Adding a list to itself,YELLOW,126.78434316230476
-38,Avoid calling Thread.sleep inside test methods,YELLOW,126.88426047293854
-37,Avoid Jumbled Loop Variable Modifications,YELLOW,127.05170866079106
-31,Assertions comparing incompatible types should not be made (java:S5845),RED,127.11674680987927
-45,Avoid leaving deprecated entities,YELLOW,128.3410445564122
-42,Avoid ignored or disabled JUnit tests,YELLOW,129.07240047735738
-28,Architecture violation,RED,129.3638844381591
-43,Avoid ignoring method results of immutable BigDecimal and BigInteger methods,RED,129.82427261062196
-58,Chained AssertJ assertions should be simplified to the corresponding dedicated assertion (java:S5838),YELLOW,129.92521103858866
-27,Annotation in JUnit test class missing,YELLOW,130.00167427876383
-59,Character classes in regular expressions should not contain the same character twice (java:S5869),YELLOW,130.002519409456
-46,Avoid special characters in 'javax.ws.rs.QueryParam' annotation parameters,YELLOW,130.0268145579707
-61,Cipher Block Chaining IVs should be unpredictable (java:S3329),RED,130.6899131660237
-101,Getters and setters should access the expected fields (java:S4275),YELLOW,131.06397098943378
-51,Back references in regular expressions should only refer to capturing groups that are matched before the reference (java:S6001),RED,132.41987114565987
-55,"Case insensitive Unicode regular expressions should enable the ""UNICODE_CASE"" flag (java:S5866)",YELLOW,132.5897359052173
-54,Calling equals()/toString() on array,YELLOW,133.25470667055365
-87,Do not use if statements to disable code,YELLOW,133.26336010444038
-22,'serialVersionUID' field should not be set to '0L' in records (java:S6219),YELLOW,134.17612055585872
-166,"Reflection should not be used to increase accessibility of classes, methods, or fields (java:S3011)",YELLOW,134.1880665765661
-70,Constant Condition,YELLOW,134.43164763475806
-63,Classes and methods that rely on the default system encoding should not be used (java:S1943),YELLOW,134.91074974099462
-23,A new session should be created during user authentication (java:S5876),RED,134.99344719606327
-44,Avoid insecure SHA-1 and Message-Digest hash algorithms,RED,136.7444509670517
-60,Character classes should be preferred over reluctant quantifiers in regular expressions (java:S5857),YELLOW,136.87950811982424
-26,Alternatives in regular expressions should be grouped when used with anchors (java:S5850),YELLOW,137.64398938805843
-24,A secure password should be used when connecting to a database (java:S2115),RED,138.58296340365305
-19,"""toString()"" should never be called on a String object (java:S1858)",YELLOW,139.16602554357985
-62,Class named like Exception should extend Exception or subclass,YELLOW,139.66514591271965
-98,File without code,YELLOW,139.89243796738634
-56,Case insensitive string comparisons should be made without intermediate upper or lower casing (java:S1157),YELLOW,140.25568445917023
-21,"""write(byte[],int,int)"" should be overridden (java:S4349)",YELLOW,140.98819345867415
-20,"""volatile"" variables should not be used with compound operators (java:S3078)",YELLOW,141.20484736461682
-66,Collection constructors should not be used as java.util.function.Function (java:S5329),YELLOW,141.81078633764088
-99,For loop without initializer and update statements should be simplified to while loop,YELLOW,142.54690039855117
-16,"""null"" should not be used with ""Optional"" (java:S2789)",YELLOW,142.680194971024
-15,"""iterator"" should not return ""this"" (java:S4348)",YELLOW,143.0029349185642
-210,Type uses name from java.lang,YELLOW,143.48727489913594
-97,Field dependency injection should be avoided (java:S6813),YELLOW,143.5747307357641
-4,"""@PathVariable"" annotation should be present if a path variable is used (java:S6856)",YELLOW,144.03283305355438
-2,"""@Bean"" methods for Singleton should not be invoked in ""@Configuration"" when proxyBeanMethods is false (java:S6838)",YELLOW,144.39209788876624
-67,Collection sizes and array length comparisons should make sense (java:S3981),RED,144.60989440790578
-6,"""@Value"" annotation should inject property or SpEL expression (java:S6804)",YELLOW,144.66295510342016
-5,"""@Qualifier"" should not be used on ""@Bean"" methods (java:S6831)",YELLOW,145.024607378081
-8,"""Externalizable"" classes should have no-arguments constructors (java:S2060)",YELLOW,145.49682424302804
-7,"""Arrays.stream"" should be used for primitive arrays (java:S3631)",YELLOW,146.00708693087572
-14,"""equals(Object obj)"" should test the argument's type (java:S2097)",YELLOW,146.2667292000635
-9,"""StringBuilder"" and ""StringBuffer"" should not be instantiated with a character (java:S1317)",RED,146.48842486731272
-95,Exceptions should not be created without being thrown (java:S3984),YELLOW,146.654500519103
-17,"""read(byte[],int,int)"" should be overridden (java:S4929)",YELLOW,147.21309433527315
-82,Discouraged package imports,YELLOW,147.91508575951823
-12,"""equals"" method overrides should accept ""Object"" parameters (java:S1201)",RED,148.00243417721384
-18,"""toString()"" and ""clone()"" methods should not return null (java:S2225)",RED,148.90549455707617
-10,"""compareTo"" results should not be checked for specific values (java:S2200)",YELLOW,150.92755295843827
-64,"Classes that override ""clone"" should be ""Cloneable"" and call ""super.clone()"" (java:S1182)",YELLOW,152.31207998425066
-92,Equals method should be overridden in records containing array fields (java:S6218),YELLOW,153.2251754842098
-71,Counter Mode initialization vectors should not be reused (java:S6432),RED,153.2730102363315
-72,Credentials should not be hard-coded (java:S6437),RED,155.83630288851904
-234,hashCode() and equals(),YELLOW,157.33143042506657
-73,Custom getter method should not be used to override record's getter behavior (java:S6211),YELLOW,158.25915079703384
-88,Duplicate Set Elements,YELLOW,159.0519556915294
-86,Do not perform unnecessary mathematical operations (java:S2185),RED,159.44663510495138
-74,Custom serialization methods should have required signatures (java:S2061),RED,161.0519952454932
-75,DateTimeFormatters should not use mismatched year and week numbers (java:S5917),YELLOW,161.95452311068553
-100,Generic wildcard types should not be used in return types (java:S1452),YELLOW,164.2475083736392
-84,Do not compare instance of Optional and null,YELLOW,164.28620450677994
-69,Comments should not contain nested comments,YELLOW,164.5180438568264
-85,Do not compare this and null,YELLOW,164.5759745060582
-83,Division by zero,RED,165.157009498575
-13,"""equals(Object obj)"" and ""hashCode()"" should be overridden in pairs (java:S1206)",YELLOW,165.4206611721616
-78,Derived exceptions should not hide their parents' catch blocks (java:S4970),YELLOW,165.84370867869404
-94,Exception thrown in finally block,YELLOW,166.32781760053203
-29,Arrays and lists should not be copied using loops (java:S3012),YELLOW,169.37282945731403
-49,Avoid using SuppressWarnings,YELLOW,172.36349126073665
-193,Suspicious methods,YELLOW,179.44510472411935
-90,Empty interface comment,YELLOW,180.52084452783637
-68,Commented-out code,YELLOW,182.1234202630648
-160,Problem tags,RED,198.8419542446352
-89,Empty catch blocks,RED,199.0586124695791
-196,Task tags,YELLOW,218.21122135111412
-106,Incorrect JavaDoc usage,YELLOW,225.84725639447004
-218,Unrelated interface comment,YELLOW,233.8572519643003
+119,Long Method,YELLOW,2.5199405115246485
+77,Deep Nesting,YELLOW,4.624918653613592
+118,Long Method,RED,6.153416083346543
+76,Deep Nesting,RED,12.188721350520074
+117,Long File,YELLOW,14.802302791299876
+116,Long File,RED,20.40183555388617
+139,No star imports,YELLOW,22.53616925029716
+220,Unused/duplicated imports (Java),YELLOW,24.07766123209972
+96,Field could be final,YELLOW,36.19919338891073
+146,Nullable injected fields and parameters should provide a default value (java:S6816),YELLOW,37.2188475979399
+147,Object comparison with the same Object,RED,37.64834084278672
+142,Non-singleton Spring beans should not be injected into singleton beans (java:S6832),YELLOW,37.96583092541749
+148,Object reference comparison with itself,RED,38.34502677196234
+141,"Non-existent operators like ""=+"" should not be used (java:S2757)",YELLOW,39.065097901749205
+150,OpenSAML2 should be configured to prevent authentication bypass (java:S5679),YELLOW,39.13469027590926
+57,Catch of generic exception,RED,39.1833677324742
+163,Raw types should not be used (java:S3740),YELLOW,39.58081065352482
+219,Unused variable or parameter,YELLOW,39.63712685023544
+65,Clones,YELLOW,39.68593917088136
+140,Non-ASCII characters,YELLOW,40.26537428064625
+207,Throw of generic exception in Java,RED,40.36852569289545
+108,Interface comment completeness,YELLOW,41.80944449446813
+188,Statements in Conditional Expression are equal,YELLOW,42.03695270908065
+152,Optional REST parameters should have an object type (java:S6814),YELLOW,42.58525273523078
+153,Passwords should not be stored in plain-text or with a fast hashing algorithm (java:S5344),RED,43.45266877291969
+138,Names of regular expressions named groups should be used (java:S5860),YELLOW,43.65584690740096
+133,Mobile database encryption keys should not be disclosed (java:S6301),RED,43.9480237226968
+134,Modulus results should not be checked for direct equality (java:S2197),RED,44.17884752293215
+131,Min and max used in combination should not always return the same value (java:S3065),RED,44.204907791599794
+114,Java naming conventions,YELLOW,44.57663121186866
+130,"Methods with Spring proxy should not be called via ""this"" (java:S6809)",RED,44.72264924865826
+154,Permitted types of a sealed class should be omitted if they are declared in the same file (java:S6217),YELLOW,45.85149133465563
+125,Method returns null but return type is Optional,RED,46.23131459301554
+122,Members ignored during record serialization should not be used (java:S6209),YELLOW,46.34457970078339
+127,Methods setUp() and tearDown() should be correctly annotated starting with JUnit4 (java:S5826),YELLOW,47.157478383171
+121,"Map ""computeIfAbsent()"" and ""computeIfPresent()"" should not be used to add ""null"" values. (java:S6104)",YELLOW,47.44784642587871
+156,Post-Operator in return statement,YELLOW,47.525823601107184
+126,"Methods ""wait(...)"", ""notify()"" and ""notifyAll()"" should not be called on Thread instances (java:S2236)",RED,47.63969529427605
+1,"""@Autowired"" should only be used on a single constructor (java:S6818)",YELLOW,47.690471112173576
+144,Nonsensical Binary Operation,YELLOW,50.48058998821204
+145,Null pointer dereference,RED,50.64338231874876
+124,Method must not be named like constructor,YELLOW,51.51735050154269
+115,Lambdas should not invoke other lambdas synchronously (java:S6246),YELLOW,51.52353403384841
+112,JWT should be signed and verified with strong cipher algorithms (java:S5659),RED,55.5595484144053
+113,Java features should be preferred to Guava (java:S4738),YELLOW,55.60276349219532
+128,"Methods should not be named ""tostring"", ""hashcode"" or ""equal"" (java:S1221)",YELLOW,56.10895559516365
+50,Avoid using ternary operators,YELLOW,56.17655607026221
+111,JUnit5 test classes and methods should not be silently ignored (java:S5810),YELLOW,58.59749901219535
+149,Octal constant usage,YELLOW,60.67680532750202
+93,Exception stacktrace is lost,YELLOW,61.60641848607833
+120,Lowercase literal suffix,YELLOW,64.66334983032323
+189,String interpolation argument number check,RED,64.89122677310608
+159,Private methods must not be final,YELLOW,65.03380697577317
+164,Redundant constructors/methods should be avoided in records (java:S6207),YELLOW,65.42745735223792
+110,JUnit5 inner test classes should be annotated with @Nested (java:S5790),YELLOW,66.7223108721911
+208,Transformation of byte sequence into String must consider encoding,YELLOW,67.55311594815707
+161,Properly initialize static variable,YELLOW,67.7425724796462
+212,Unmatched Types,YELLOW,68.73174334331804
+211,Unit test class location,YELLOW,69.14454752172172
+151,"Operator ""instanceof"" should be used instead of ""A.class.isInstance()"" (java:S6202)",YELLOW,69.68964965219153
+213,Unnecessary bit operations should not be performed (java:S2437),RED,69.90147376419986
+143,Non-thread-safe fields should not be static,YELLOW,71.75757877760702
+165,Reflection should not be used to check non-runtime annotations (java:S2109),RED,71.97995532319628
+205,"The signature of ""finalize()"" should match that of ""Object.finalize()"" (java:S1175)",YELLOW,72.16035094421528
+109,JUnit4 @Ignored and JUnit5 @Disabled annotations should be used to disable tests and should provide a rationale (java:S1607),YELLOW,73.6069522081901
+81,Discouraged method calls (Java),YELLOW,73.63128915260064
+231,New exception is created but not thrown,RED,74.89414253174873
+47,Avoid unused private fields (Java),YELLOW,75.17607008010393
+229,XML signatures should be validated securely (java:S6377),RED,75.4719276888963
+167,Reflection should not be used to increase accessibility of records' fields (java:S6216),RED,76.3339666364837
+232,assertThat(..) calls should be followed by an assertion specification (excluding .as(..)),YELLOW,76.70935274644451
+53,Calling contains on list,YELLOW,76.84229354662175
+222,"Use of the ""@Async"" annotation on methods declared within a ""@Configuration"" class in Spring Boot (java:S6817)",YELLOW,77.33815051707045
+52,Call to printStackTrace(),YELLOW,77.61471467941423
+204,The regex escape sequence \cX should only be used with characters in the @-_ range (java:S6070),YELLOW,77.80440137696576
+136,Multiple statements in same line,YELLOW,77.89205425560743
+228,XML parsers should not load external schemas (java:S6374),RED,78.16863798947118
+223,Value-based classes should not be used for locking (java:S3436),RED,78.43942995094082
+226,XML parsers should not allow inclusion of arbitrary files (java:S6373),RED,78.51726353744354
+221,Unwanted catch of Exception (Java),YELLOW,78.58390115818707
+201,Text blocks should not be used in complex expressions (java:S6203),YELLOW,79.04518845160386
+224,Variables should not be self-assigned (java:S1656),RED,79.15773242372852
+217,Unreachable code after exit statement,YELLOW,79.19117150792628
+168,Regex alternatives should not be redundant (java:S5855),YELLOW,79.26747891983582
+123,Method always returns the same value,YELLOW,79.4149854968135
+225,Whitespace and control characters in literals should be explicit (java:S2479),YELLOW,79.48530552056941
+202,"The ""Object.finalize()"" method should not be called (java:S1111)",RED,79.5827470194285
+200,Tests should be stable (java:S5973),YELLOW,79.71698551148111
+227,XML parsers should not be vulnerable to Denial of Service attacks (java:S6376),RED,81.36676761473396
+199,Tests method should not be annotated with competing annotations (java:S5967),YELLOW,82.09541520713964
+155,Possible division by zero,RED,83.45791385603344
+209,Type parameters should not shadow other type parameters (java:S4977),YELLOW,83.51700269493095
+171,Regexes containing characters subject to normalization should use the CANON_EQ flag (java:S5854),YELLOW,84.63885320317708
+36,Avoid C-style array declarations in Java,YELLOW,85.00393894976713
+170,Regex lookahead assertions should not be contradictory (java:S6002),RED,85.55201843145747
+174,Regular expressions should not contain empty groups (java:S6331),YELLOW,87.4337319515377
+186,SpEL expression should have a valid syntax (java:S6857),RED,87.61054993975937
+172,Regular expressions should be syntactically valid (java:S5856),RED,87.7483726198673
+183,Same package import,YELLOW,88.04979201125296
+197,Test class naming convention,YELLOW,88.36285899207294
+176,Reluctant quantifiers in regular expressions should be followed by an expression that can't match the empty string (java:S6019),YELLOW,88.91181298846405
+206,"The upper bound of type variables and wildcards should not be ""final"" (java:S4968)",YELLOW,88.98512193005291
+3,"""@Deprecated"" code marked for removal should never be used (java:S5738)",YELLOW,89.11317992995995
+233,finalize() may not be overwritten,YELLOW,89.88700480920636
+215,Unnecessary creation of pre-defined BigInteger/BigDecimal object,YELLOW,90.03091197487534
+173,Regular expressions should not be too complicated (java:S5843),YELLOW,90.68099376744097
+129,Methods should not have too many parameters (Java),YELLOW,91.00685836473389
+214,Unnecessary boxing and unboxing should be avoided (java:S2153),YELLOW,91.39505111985582
+0,"""@Autowired"" should be used when multiple constructors are provided (java:S6829)",YELLOW,91.77779592096648
+190,String operations with predictable outcomes should be avoided (java:S2121),YELLOW,91.9471211997042
+169,Regex boundaries should not be used in a way that can never be matched (java:S5996),RED,92.57713611133435
+181,Return in finally block,YELLOW,92.6290396424526
+79,Discouraged Java Date/Time API usage,YELLOW,92.86098167941525
+230,Zero should not be a possible denominator (java:S3518),RED,94.0392836452788
+175,Regular expressions should not overflow the stack (java:S5998),YELLOW,94.10299217612656
+158,"Primitives should not be boxed just for ""String"" conversion (java:S2131)",YELLOW,94.12274544870192
+132,Missing braces for block statements,YELLOW,94.20391370625404
+198,Test for NaN correctly,RED,95.57920446050112
+203,"The ""Object.finalize()"" method should not be overridden (java:S1113)",YELLOW,95.94997623491508
+157,"Primitive wrappers should not be instantiated only for ""toString"" or ""compareTo"" calls (java:S1158)",YELLOW,96.4575880655276
+41,Avoid creating SimpleDateFormat objects without specifying the Locale,YELLOW,97.34151830371046
+179,Restricted Identifiers should not be used as Identifiers (java:S6213),YELLOW,99.9291161875992
+80,Discouraged constructor calls,YELLOW,100.3244021009344
+178,Repeated subcondition,YELLOW,100.84491821187056
+187,Specify new Logger instances with current class,YELLOW,102.03324636932378
+137,Multiple top-level classes,RED,102.16723276469128
+162,Public class attribute,YELLOW,102.93752961678868
+104,Hashes should include an unpredictable salt (java:S2053),RED,105.13736927436456
+177,Repeated patterns in regular expressions should not match the empty string (java:S5842),YELLOW,105.6096242297492
+182,Return value null dereferencing,RED,107.40282222144054
+194,Switch statement should have a well-placed default label,RED,108.36457019156816
+91,Equality check with boolean literal,YELLOW,108.72141806199248
+103,Hash-based collections with known capacity should be initialized with the proper related static method. (java:S6485),YELLOW,109.4858774488264
+192,Superfluous toString() calls,YELLOW,110.27088395139884
+48,Avoid unused private methods (Java),YELLOW,110.6015463726016
+185,Single-character alternations in regular expressions should be replaced with character classes (java:S6035),YELLOW,111.86774882517985
+135,Multiple assignments in same statement,YELLOW,113.73104912441728
+184,Short-circuit logic should be used in boolean contexts (java:S2178),RED,115.121799123715
+195,Synchronization should not be done on instances of value-based classes (java:S1860),RED,116.26103188562618
+11,"""entrySet()"" should be iterated when both the key and value are needed (java:S2864)",YELLOW,116.7388786409647
+216,Unnecessary parameterless super constructor call,YELLOW,116.91390289773508
+180,Return empty collection instead of a null value,YELLOW,117.3326164816266
+102,Hard-coded password,YELLOW,118.30695679927096
+105,Import from java.lang,YELLOW,118.4146200902618
+107,Instance-of usage for exception within catch-block,YELLOW,119.12026631058028
+33,Assignment of a variable to itself,YELLOW,121.63683899047048
+40,Avoid continue and break with label,YELLOW,122.29156423244102
+32,Assertions should not compare an object to itself (java:S5863),YELLOW,123.99810012936793
+34,Async methods should return void or Future (java:S6810),YELLOW,124.72909824766612
+35,Authorizations should be based on strong decisions (java:S5808),YELLOW,125.1699153245714
+39,Avoid conditional expressions of the form if (true...,YELLOW,125.17771415154348
+191,"Strings and Boxed types should be compared using ""equals()"" (java:S4973)",YELLOW,125.559258641238
+45,Avoid leaving deprecated entities,YELLOW,125.74239442367572
+31,Assertions comparing incompatible types should not be made (java:S5845),RED,126.2834422680264
+25,Adding a list to itself,YELLOW,126.41220379970363
+30,AssertJ methods setting the assertion context should come before an assertion (java:S5833),YELLOW,126.74389197868616
+42,Avoid ignored or disabled JUnit tests,YELLOW,126.99230019780944
+28,Architecture violation,RED,127.49057801574824
+70,Constant Condition,YELLOW,127.88939873484328
+51,Back references in regular expressions should only refer to capturing groups that are matched before the reference (java:S6001),RED,128.10742022104907
+38,Avoid calling Thread.sleep inside test methods,YELLOW,128.2024584101094
+46,Avoid special characters in 'javax.ws.rs.QueryParam' annotation parameters,YELLOW,128.58328071984545
+27,Annotation in JUnit test class missing,YELLOW,129.0173966446354
+87,Do not use if statements to disable code,YELLOW,129.03665608196468
+55,"Case insensitive Unicode regular expressions should enable the ""UNICODE_CASE"" flag (java:S5866)",YELLOW,129.39677796588833
+43,Avoid ignoring method results of immutable BigDecimal and BigInteger methods,RED,129.41309365698805
+101,Getters and setters should access the expected fields (java:S4275),YELLOW,129.71829173219368
+37,Avoid Jumbled Loop Variable Modifications,YELLOW,129.78368608689698
+59,Character classes in regular expressions should not contain the same character twice (java:S5869),YELLOW,130.0401425286556
+58,Chained AssertJ assertions should be simplified to the corresponding dedicated assertion (java:S5838),YELLOW,131.00295587309537
+61,Cipher Block Chaining IVs should be unpredictable (java:S3329),RED,131.4046279352156
+44,Avoid insecure SHA-1 and Message-Digest hash algorithms,RED,133.75408278938502
+23,A new session should be created during user authentication (java:S5876),RED,134.4549304543662
+63,Classes and methods that rely on the default system encoding should not be used (java:S1943),YELLOW,135.3181430099847
+22,'serialVersionUID' field should not be set to '0L' in records (java:S6219),YELLOW,135.67884117388854
+16,"""null"" should not be used with ""Optional"" (java:S2789)",YELLOW,136.4637528106692
+60,Character classes should be preferred over reluctant quantifiers in regular expressions (java:S5857),YELLOW,136.4774903813164
+7,"""Arrays.stream"" should be used for primitive arrays (java:S3631)",YELLOW,136.67127565180292
+166,"Reflection should not be used to increase accessibility of classes, methods, or fields (java:S3011)",YELLOW,137.09899396849374
+15,"""iterator"" should not return ""this"" (java:S4348)",YELLOW,137.40054518622975
+54,Calling equals()/toString() on array,YELLOW,138.08845985446524
+24,A secure password should be used when connecting to a database (java:S2115),RED,138.67181507104468
+19,"""toString()"" should never be called on a String object (java:S1858)",YELLOW,138.87571237135765
+66,Collection constructors should not be used as java.util.function.Function (java:S5329),YELLOW,139.38138894003595
+8,"""Externalizable"" classes should have no-arguments constructors (java:S2060)",YELLOW,139.63269243847955
+26,Alternatives in regular expressions should be grouped when used with anchors (java:S5850),YELLOW,140.4239360759995
+2,"""@Bean"" methods for Singleton should not be invoked in ""@Configuration"" when proxyBeanMethods is false (java:S6838)",YELLOW,141.01822311507763
+21,"""write(byte[],int,int)"" should be overridden (java:S4349)",YELLOW,141.22876921754457
+56,Case insensitive string comparisons should be made without intermediate upper or lower casing (java:S1157),YELLOW,141.31005613853335
+98,File without code,YELLOW,141.45996936585695
+5,"""@Qualifier"" should not be used on ""@Bean"" methods (java:S6831)",YELLOW,141.5938334662802
+6,"""@Value"" annotation should inject property or SpEL expression (java:S6804)",YELLOW,141.77409878040686
+67,Collection sizes and array length comparisons should make sense (java:S3981),RED,141.81465242541404
+4,"""@PathVariable"" annotation should be present if a path variable is used (java:S6856)",YELLOW,142.40078732567758
+99,For loop without initializer and update statements should be simplified to while loop,YELLOW,142.44113606610907
+62,Class named like Exception should extend Exception or subclass,YELLOW,142.5203190144234
+97,Field dependency injection should be avoided (java:S6813),YELLOW,143.00563600252795
+82,Discouraged package imports,YELLOW,143.30697510038107
+17,"""read(byte[],int,int)"" should be overridden (java:S4929)",YELLOW,143.68405920950758
+20,"""volatile"" variables should not be used with compound operators (java:S3078)",YELLOW,144.1319601273565
+9,"""StringBuilder"" and ""StringBuffer"" should not be instantiated with a character (java:S1317)",RED,144.37075196872632
+95,Exceptions should not be created without being thrown (java:S3984),YELLOW,144.51576778708034
+12,"""equals"" method overrides should accept ""Object"" parameters (java:S1201)",RED,145.16467548548013
+86,Do not perform unnecessary mathematical operations (java:S2185),RED,146.71953468836344
+18,"""toString()"" and ""clone()"" methods should not return null (java:S2225)",RED,147.5731804692447
+71,Counter Mode initialization vectors should not be reused (java:S6432),RED,150.248620810258
+64,"Classes that override ""clone"" should be ""Cloneable"" and call ""super.clone()"" (java:S1182)",YELLOW,151.16282448142587
+72,Credentials should not be hard-coded (java:S6437),RED,153.60014596249545
+92,Equals method should be overridden in records containing array fields (java:S6218),YELLOW,154.03166914654503
+10,"""compareTo"" results should not be checked for specific values (java:S2200)",YELLOW,154.03206596265682
+234,hashCode() and equals(),YELLOW,154.4682861447307
+14,"""equals(Object obj)"" should test the argument's type (java:S2097)",YELLOW,154.6405202965793
+88,Duplicate Set Elements,YELLOW,155.63673096784555
+210,Type uses name from java.lang,YELLOW,155.64539280500853
+100,Generic wildcard types should not be used in return types (java:S1452),YELLOW,158.15470197857277
+85,Do not compare this and null,YELLOW,158.50444373375515
+73,Custom getter method should not be used to override record's getter behavior (java:S6211),YELLOW,158.70098407354723
+74,Custom serialization methods should have required signatures (java:S2061),RED,160.02923975433742
+84,Do not compare instance of Optional and null,YELLOW,160.55810577165116
+94,Exception thrown in finally block,YELLOW,161.72061146512422
+83,Division by zero,RED,161.95565943800713
+75,DateTimeFormatters should not use mismatched year and week numbers (java:S5917),YELLOW,162.20499850227708
+68,Commented-out code,YELLOW,162.94332235273268
+78,Derived exceptions should not hide their parents' catch blocks (java:S4970),YELLOW,163.1941605931758
+69,Comments should not contain nested comments,YELLOW,166.2548431647444
+13,"""equals(Object obj)"" and ""hashCode()"" should be overridden in pairs (java:S1206)",YELLOW,170.42859676228522
+49,Avoid using SuppressWarnings,YELLOW,171.60554456079376
+29,Arrays and lists should not be copied using loops (java:S3012),YELLOW,172.4312958078952
+193,Suspicious methods,YELLOW,174.13833673781508
+90,Empty interface comment,YELLOW,180.3985529100156
+89,Empty catch blocks,RED,190.5983170514311
+160,Problem tags,RED,204.7513906297505
+196,Task tags,YELLOW,209.12963324714565
+106,Incorrect JavaDoc usage,YELLOW,225.41090496496213
+218,Unrelated interface comment,YELLOW,233.8565619642478

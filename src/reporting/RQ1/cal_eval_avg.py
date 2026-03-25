@@ -51,4 +51,4 @@ def aggregate_csv_metrics(folder_path, output_file="eval_avg.csv"):
     aggregated_df.to_csv(output_file, index=False, encoding="utf-8-sig")
     print(f"已保存到 {output_file}")
 
-aggregate_csv_metrics(Path(config["eval_results_dir"]))
+aggregate_csv_metrics(Path(config["eval_results_dir"]), Path(config["output_dir"]) / "eval_avg.csv")

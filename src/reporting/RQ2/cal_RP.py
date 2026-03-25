@@ -47,7 +47,7 @@ RESULTS_DIR = Path(config["output_dir"])
 
 def log_init():
     os.makedirs(RESULTS_DIR, exist_ok=True)
-    log_file_path = RESULTS_DIR / ".log"
+    log_file_path = RESULTS_DIR / "cal_RP.log"
     logging.basicConfig(
         level=logging.INFO,
         format="%(message)s",

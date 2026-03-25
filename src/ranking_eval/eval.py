@@ -71,7 +71,7 @@ def parse_args():
 def log_init():
     os.makedirs(RESULTS_DIR, exist_ok=True)
     
-    log_file_path = RESULTS_DIR / ".log"
+    log_file_path = RESULTS_DIR / "eval.log"
     logging.basicConfig(
         level=logging.INFO,
         format="%(message)s",
@@ -222,10 +222,16 @@ def cross_version_validation_with_selected_features(versions, project_name):
 
         logging.info(f"获取版本 {versions[i]} 到 {versions[i+1]} 的特征重要性文件")
         # 首先要获取版本的selected_feature_indices
-        if MODEL_NAME != 'kendalltau' and MODEL_NAME != 'pearsonr' and MODEL_NAME != 'spearmanr':
-            checks_ranking_file = os.path.join(FEATURE_IMPORTANTCE_RESULTS_PATH, f"{project_name}_{versions[i]}_to_{versions[i+1]}_feature_importance_recall.csv")
-        else:
+        if MODEL_NAME == 'kendalltau' or MODEL_NAME == 'pearsonr' or MODEL_NAME == 'spearmanr':
             checks_ranking_file = os.path.join(FEATURE_IMPORTANTCE_RESULTS_PATH, f"{project_name}_{versions[i]}_to_{versions[i+1]}_{MODEL_NAME}_feature_ranking.csv")
+        elif 'deepseek' in MODEL_NAME:
+            if 'rank' in MODEL_NAME:
+                checks_ranking_file = os.path.join(FEATURE_IMPORTANTCE_RESULTS_PATH, 'llm_rank_results_standard_ranking.csv')
+            else :
+                checks_ranking_file = os.path.join(FEATURE_IMPORTANTCE_RESULTS_PATH, 'llm_score_results_standard_ranking.csv')
+
+        else:
+            checks_ranking_file = os.path.join(FEATURE_IMPORTANTCE_RESULTS_PATH, f"{project_name}_{versions[i]}_to_{versions[i+1]}_feature_importance_recall.csv")
         feature_pd = pd.read_csv(checks_ranking_file)
 
 

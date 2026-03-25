@@ -159,18 +159,19 @@ def create_dataset(release, abs_ts_path, abs_labels_path, abs_findings_path, abs
             start_line = int(float(str(row["start_line"]).strip()))
             end_line = int(float(str(row["end_line"]).strip()))
         except Exception as e:
-            # str转为int失败，表示finding是一个文件级别的违反规则，不是行级别的
-            # logging.info(f'{row["type"].strip()} 读取行号失败: {e}，是文件级别的违反规则')
-            key = (row["location"], -1)
-            ts_dict[key] = (row["type"], row["severity"])
-            key = (row["location"].strip(), -1)
-            ts_dict[key] = (row["type"].strip(), row["severity"].strip())
+            location = str(row["location"]).strip()
+            finding_type = str(row["type"]).strip()
+            severity = str(row["severity"]).strip()
+            ts_dict.setdefault((location, -1), set()).add((finding_type, severity))
             continue
+
 
         # 遍历 start_line 到 end_line 之间的每一行
         for line in range(start_line, end_line + 1):
             key = (location, line)
-            ts_dict[key] = (finding_type, severity)
+            # ts_dict[key] = (finding_type, severity)
+            ts_dict.setdefault(key, set()).add((finding_type, severity))
+
 
     logging.info(f"读取 {len(ts_dict)} 条违反规则记录")
 
@@ -201,10 +202,15 @@ def create_dataset(release, abs_ts_path, abs_labels_path, abs_findings_path, abs
 
             # 规则特征
             if (rel_path, line_no) in ts_dict:
-                data_item[finding_mapping[ts_dict[(rel_path, line_no)]]] += 1
-                temp_count += 1
+                # data_item[finding_mapping[ts_dict[(rel_path, line_no)]]] += 1
+                # temp_count += 1
+                for ft, sev in ts_dict[(rel_path, line_no)]:
+                    data_item[finding_mapping[(ft, sev)]] = 1
+                    temp_count += 1
             if (rel_path, -1) in ts_dict:
-                data_item[finding_mapping[ts_dict[(rel_path, -1)]]] += 1
+                # data_item[finding_mapping[ts_dict[(rel_path, -1)]]] += 1
+                for ft, sev in ts_dict[(rel_path, -1)]:
+                    data_item[finding_mapping[(ft, sev)]] = 1
 
             dataset.append(data_item)
     # 检查没用到的 labels
@@ -217,8 +223,6 @@ def create_dataset(release, abs_ts_path, abs_labels_path, abs_findings_path, abs
     else:
         logging.info("所有缺陷行都已匹配到数据集")
     logging.info(f"生成数据集，共 {len(dataset)} 条记录，包含 {temp_count} 条findings")
-
-
 
     return dataset
 

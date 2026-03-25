@@ -1,0 +1,17 @@
+Method,final_rank,rp_score
+AdaBoost,13,9.304003985631045
+Bagging,8,7.245773426560432
+Balanced Bagging,4,4.749050074389859
+Balanced Random Forest,2,4.485392686271657
+Naive Bayes,5,5.323198057762533
+Extra Trees,6,6.695720074051162
+Gradient Boosting,14,9.50603950934095
+LightGBM,3,4.526249783176487
+Logistic Regression,15,9.936507611263792
+Pearson,1,2.5572516464020163
+Random Forest,9,7.435423197754301
+XGBoost,7,6.733327732250908
+deepseek-chat-Rank,11,8.550766174284519
+deepseek-chat-Score,16,10.626788608322064
+deepseek-reasoner-Rank,11,8.550766174284519
+deepseek-reasoner-Score,10,8.267731092809301

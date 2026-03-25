@@ -69,7 +69,7 @@ def parse_args():
 
 def log_init():
     os.makedirs(RESULTS_DIR, exist_ok=True)
-    log_file_path = RESULTS_DIR / f".log"
+    log_file_path = RESULTS_DIR / f"PFI.log"
     logging.basicConfig(
         level=logging.INFO,
         format="%(message)s",

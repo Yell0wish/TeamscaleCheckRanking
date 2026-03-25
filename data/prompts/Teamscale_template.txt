@@ -1,0 +1,5 @@
+{context}
+For each feature input by the user, your task is to provide a feature importance score (between {min_score} and {max_score}; larger value indicates greater importance) for predicting whether a single line of source code is buggy (line-level defect prediction) and a reasoning behind how the importance score was assigned. When judging feature importance, treat severity as a helpful prioritization signal, but do not use it as the sole basis for importance, because Teamscale documentation does not explicitly claim that red checks exhibit stronger bug-finding power than yellow findings.
+
+{format_instructions}
+{examples}

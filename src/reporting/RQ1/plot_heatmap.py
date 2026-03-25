@@ -55,8 +55,8 @@ def replace_with_rank(csv_path, output_path=None, ascending_dict=None):
 
 # 如果某些列希望是降序（值越大排名越前），例如 R@20%、Accuracy@10、PMI@20%
 df_ranked = replace_with_rank(
-    Path(config["output_dir"]) / "eval_avg.csv",
-    output_path="ranked.csv",
+    Path(config["output_dir"]) / "eval_avg_standard.csv",
+    Path(config["output_dir"]) / "eval_avg_ranked.csv",
     ascending_dict={"R@20%": False, "Accuracy@10": False}
 )
 

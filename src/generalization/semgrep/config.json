@@ -1,0 +1,8 @@
+{
+    "semgrep_rules_dir": "path/to/semgrep-rules/java",
+    "output_dir": "../../../data/generalization/semgrep",
+    "repos_dir": "path/to/your_project_repos/",
+    "successful_projects": "../../../data/successful_projects.csv",
+    "line_level_bug_labels_dir": "path/to/BugDet/Dataset/Line-level/",
+    "file_level_bug_labels_dir": "path/to/BugDet/Dataset/File-level/"
+}

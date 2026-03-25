@@ -12,3 +12,7 @@ python eval.py --model pearsonr --feature_file ../../data/correlation_results/pe
 python eval.py --model RandomForest --feature_file ../../data/PFI_results/RandomForest_results
 python eval.py --model spearmanr --feature_file ../../data/correlation_results/spearmanr_results
 python eval.py --model XGBoost --feature_file ../../data/PFI_results/XGBoost_results
+python eval.py --model deepseek-chat-rank --feature_file ../../data/llm_results/Teamscale_deepseek_chat_rank_results
+python eval.py --model deepseek-chat-score --feature_file ../../data/llm_results/Teamscale_deepseek_chat_score_results
+python eval.py --model deepseek-reasoner-rank --feature_file ../../data/llm_results/Teamscale_deepseek_reasoner_rank_results
+python eval.py --model deepseek-reasoner-score --feature_file ../../data/llm_results/Teamscale_deepseek_reasoner_score_results
